@@ -1,0 +1,13 @@
+﻿生成启动时间为 2020/3/3 12:21:58。
+     1>项目“F:\Code\test_3_2\test_3_2\test_3_2.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "源.cpp"
+         源.cpp
+     1>f:\code\test_3_2\test_3_2\源.cpp(11): error C2065: “a”: 未声明的标识符
+     1>f:\code\test_3_2\test_3_2\源.cpp(16): error C2084: 函数“int main(void)”已有主体
+                 f:\code\test_3_2\test_3_2\源.cpp(5) : 参见“main”的前一个定义
+     1>已完成生成项目“F:\Code\test_3_2\test_3_2\test_3_2.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:01.14
