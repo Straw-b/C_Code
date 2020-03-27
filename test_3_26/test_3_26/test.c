@@ -9,9 +9,9 @@
 //
 //	return 0;
 //}
-//
 
-//数组越界导致的野指针问题
+
+////数组越界导致的野指针问题
 //int main()
 //{
 //	int a[10] = { 0 };
@@ -26,22 +26,22 @@
 //
 //	return 0;
 //}
-#include<stdio.h>
-//
+
+
 //int* test()
 //{
-//	/*int a = 10;
-//	return &a;*/
+//	int a = 10;
+//	return &a;
 //}
 //
 //int main()
 //{
 //	int* p = test();
 //	printf("%d\n", *p);
-//
 //	return 0;
 //}
-//
+
+
 //int main()
 //{
 //	//int b = 0;
@@ -59,7 +59,8 @@
 //
 //	}
 //}
-//
+
+
 //int main()
 //{
 //	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
@@ -80,7 +81,8 @@
 //	return 0;
 //}
 
-//
+
+
 //int main()
 //{
 //	char ch[5] = {0};
@@ -90,7 +92,8 @@
 //
 //	return 0;
 //}
-//
+
+
 //int my_strlen(char* str)
 //{
 //	char* start = str;
@@ -114,17 +117,19 @@
 //
 //	return 0;
 //}
-//
+
+
+
 //int main()
 //{
 //	int arr[10] = { 0 };
 //	printf("%p\n", arr);//地址-首元素的地址
 //	printf("%p\n", arr+1);
 //
-//	printf("%p\n", &arr[0]);//
+//	printf("%p\n", &arr[0]);//地址-首元素的地址
 //	printf("%p\n", &arr[0]+1);
 //	
-//	printf("%p\n", &arr);//
+//	printf("%p\n", &arr);//&数组名 
 //	printf("%p\n", &arr + 1);
 //
 //	//1. &arr- &数组名- 数组名不是首元素的地址-数组名表示整个数组 - &数组名 取出的是整个数组的地址
@@ -133,7 +138,8 @@
 //	return 0;
 //}
 
-//
+
+
 //int main()
 //{
 //	int arr[10] = { 0 };
@@ -155,7 +161,9 @@
 //	}*/
 //	return 0;
 //}
-//
+
+
+
 //int main()
 //{
 //	int a = 10;
@@ -170,32 +178,36 @@
 //	return 0;
 //}
 
+
+
 //好孩子  -- 孩子
 //指针数组 - 数组 - 存放指针的数组
 //数组指针 - 指针
-//
-//int main()
-//{
-//	int a = 10;
-//	int b = 20;
-//	int c = 30;
-//	//int* pa = &a;
-//	//int* pb = &b;
-//	//int* pc = &c;
-//	//整形数组 - 存放整形
-//	//字符数组 - 存放字符
-//	//指针数组 - 存放指针
-//	//int arr[10];
-//	int* arr2[3] = {&a, &b, &c};//指针数组
-//	int i = 0;
-//	for (i = 0; i < 3; i++)
-//	{
-//		printf("%d ", *(arr2[i]));
-//	}
-//
-//	return 0;
-//}
-//
+
+int main()
+{
+	int a = 10;
+	int b = 20;
+	int c = 30;
+	//int* pa = &a;
+	//int* pb = &b;
+	//int* pc = &c;
+	//整形数组 - 存放整形
+	//字符数组 - 存放字符
+	//指针数组 - 存放指针
+	//int arr[10];
+	int* arr2[3] = {&a, &b, &c};//指针数组
+	int i = 0;
+	for (i = 0; i < 3; i++)
+	{
+		printf("%d ", *(arr2[i]));
+	}
+	return 0;
+}
+
+
+
+
 
 
 //int main()
