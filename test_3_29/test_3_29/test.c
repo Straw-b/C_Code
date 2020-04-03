@@ -5,9 +5,8 @@
 
 //
 //F5-启动调试-和F9配合使用的
-//
-
 //断点 F9切换断点
+
 
 //int main()
 //{
@@ -24,6 +23,8 @@
 //
 //	return 0;
 //}
+
+
 //
 //int Add(int x, int y)
 //{
@@ -40,6 +41,7 @@
 //	return 0;
 //}
 
+
 //
 //int main()
 //{
@@ -53,9 +55,9 @@
 //	{
 //		arr[i] = i;
 //	}
-//	
 //	return 0;
 //}
+
 
 //void test2()
 //{
@@ -74,7 +76,9 @@
 //	test();
 //	return 0;
 //}
-//
+
+
+
 //int main()
 //{
 //	int i = 0;
@@ -95,8 +99,9 @@
 //	printf("%d\n", sum);
 //	return 0;
 //}
-//
-//
+
+
+
 
 //
 //int main()
@@ -121,7 +126,8 @@
 //
 //	return 0;
 //}
-//
+
+
 
 //void my_strcpy(char* dest, char* src)
 //{
@@ -173,7 +179,7 @@
 //}
 
 
-//
+
 //int main()
 //{
 //	const int num = 10;
@@ -190,7 +196,9 @@
 //
 //	return 0;
 //}
-//
+
+
+
 //int my_strlen(const char *str)
 //{
 //	int count = 0;
@@ -203,7 +211,8 @@
 //	}
 //	return count;
 //}
-//
+
+
 //int main()
 //{
 //	char arr[] = "abcdef";
@@ -211,6 +220,7 @@
 //	printf("%d\n", len);
 //	return 0;
 //}
+
 
 //int main()
 //{
@@ -220,17 +230,18 @@
 //	return 0;
 //}
 
-//int add(int x, int y)
-//{
-//	return x + y;
-//}
 
-//int main()
-//{
-//	int a = 10;
-//	int b = 20;
-//	int sum = Add(a, b);
-//	printf("%d\n", sum);
-//
-//	return 0;
-//}
+int Add(int x, int y)
+{
+	return x + y;
+}
+
+int main()
+{
+	int a = 10;
+	int b = 20;
+	int sum = Add(a, b);
+	printf("%d\n", sum);
+
+	return 0;
+}
