@@ -184,40 +184,34 @@
 //指针数组 - 数组 - 存放指针的数组
 //数组指针 - 指针
 
-int main()
-{
-	int a = 10;
-	int b = 20;
-	int c = 30;
-	//int* pa = &a;
-	//int* pb = &b;
-	//int* pc = &c;
-	//整形数组 - 存放整形
-	//字符数组 - 存放字符
-	//指针数组 - 存放指针
-	//int arr[10];
-	int* arr2[3] = {&a, &b, &c};//指针数组
-	int i = 0;
-	for (i = 0; i < 3; i++)
-	{
-		printf("%d ", *(arr2[i]));
-	}
-	return 0;
-}
-
-
-
-
-
-
 //int main()
 //{
+//	int a = 10;
+//	int b = 20;
+//	int c = 30;
+//	//int* pa = &a;
+//	//int* pb = &b;
+//	//int* pc = &c;
+//	//整形数组 - 存放整形
+//	//字符数组 - 存放字符
+//	//指针数组 - 存放指针
+//	//int arr[10];
+//	int* arr2[3] = {&a, &b, &c};//指针数组
+//	int i = 0;
+//	for (i = 0; i < 3; i++)
 //	{
-//		int a = 10;
+//		printf("%d ", *(arr2[i]));
 //	}
-//	printf("%d\n", a);
+//	return 0;
 //}
-//
+
+
+
+
+
+
+
+
 //void Init(int arr[], int sz)
 //{
 //	int i = 0;
@@ -226,6 +220,7 @@ int main()
 //		arr[i] = 0;
 //	}
 //}
+//
 //void Print(int arr[], int sz)
 //{
 //	int i = 0;
@@ -240,7 +235,6 @@ int main()
 //{
 //	int left = 0;
 //	int right = sz - 1;
-//
 //	while (left<right)
 //	{
 //		int tmp = arr[left];
@@ -259,9 +253,10 @@ int main()
 //	Print(arr, sz);//打印
 //	Reverse(arr, sz);
 //	Print(arr, sz);//打印
-//
 //	return  0;
 //}
+
+
 
 //int main()
 //{
@@ -276,10 +271,9 @@ int main()
 //		arr1[i] = arr2[i];
 //		arr2[i] = tmp;
 //	}
-//
 //}
 
-//
+
 //#include <stdio.h>
 //int main()
 //{
@@ -297,7 +291,9 @@ int main()
 //	}
 //	return 0;
 //}
-//
+
+
+
 //#include <stdio.h>
 //int main()
 //{
@@ -307,9 +303,9 @@ int main()
 //	printf("%x\n", a);
 //	return 0;
 //}
-//
-//
-//
+
+
+
 //#include <stdio.h>
 //int i;//全局变量-不初始化-默认是0
 //int main()
@@ -340,6 +336,6 @@ int main()
 //	c = ++a;
 //	b = ++c, c++, ++a, a++;
 //	b += a++ + c;
-//	printf("a = %d b = %d c = %d\n:", a, b, c);
+//	printf("a = %d b = %d c = %d\n", a, b, c);
 //	return 0;
 //}
