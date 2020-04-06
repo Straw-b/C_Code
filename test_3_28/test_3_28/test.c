@@ -1,8 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-
 #include <stdio.h>
 #include <stdlib.h>
-//
+
 //int count_bit_one(unsigned int n)
 //{
 //	int count = 0;
@@ -46,7 +45,6 @@
 //}
 
 
-
 //n = n&(n-1)
 //n
 //13
@@ -79,7 +77,8 @@
 //	return 0;
 //}
 
-//
+
+
 //int get_diff_bit(int m, int n)
 //{
 //	int tmp = m^n;
@@ -92,19 +91,19 @@
 //	}
 //	return count;
 //}
-//
+
 //int main()
 //{
 //	int m = 0;
 //	int n = 0;
 //	scanf("%d%d", &m, &n);
 //	int count = get_diff_bit(m, n);
-//
 //	printf("count = %d\n", count);
-//
 //	return 0;
 //}
-//00000000000000000000000000001010
+
+
+
 //void print(int m)
 //{
 //	int i = 0;
@@ -130,6 +129,7 @@
 //	return 0;
 //}
 
+
 //void print(int *p, int sz)
 //{
 //	int i = 0;
@@ -143,10 +143,11 @@
 //	int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 //	int sz = sizeof(arr) / sizeof(arr[0]);
 //	print(arr, sz);
-//
 //	return 0;
 //}
-//
+
+
+
 //int Fun(int n)
 //{
 //	if (n == 5)
@@ -180,16 +181,15 @@
 //	print_table(n);
 //	return 0;
 //}
-//
+
+
+
 //题目名称：
 //字符串逆序（递归实现）
 //题目内容：
 //编写一个函数 reverse_string(char * string)（递归实现）
-//
 //实现：将参数字符串中的字符反向排列。
-//
 //要求：不能使用C函数库中的字符串操作函数。
-
 
 //#include <string.h>
 //
@@ -203,9 +203,7 @@
 //	}
 //	return count;
 //}
-
-
-
+//
 //void reverse_string(char arr[])
 //{
 //	int left = 0;
@@ -276,6 +274,7 @@
 //	return 0;
 //}
 
+
 //double Pow(int n, int k)
 //{
 //	//n^k = n* n^(k-1)
@@ -297,6 +296,12 @@
 //	printf("ret = %lf\n", ret);
 //	return 0;
 //}
+
+
+
+
+
+
 
 // 描述一个学生-一些数据
 // 名字
@@ -332,7 +337,7 @@
 //}
 //
 
-//
+
 //struct S
 //{
 //	int a;
@@ -352,15 +357,16 @@
 //{
 //	char arr[] = "hello bit\n";
 //	struct T t = { "hehe", {100, 'w', "hello world", 3.14}, arr};
+//
 //	printf("%s\n", t.ch);//hehe
 //	printf("%s\n", t.s.arr);//hello world
 //	printf("%lf\n", t.s.d);//3.14
 //	printf("%s\n", t.pc);//hello bit
 //
-//
 //	return 0;
 //}
-//
+
+
 //typedef struct Stu
 //{
 //	//成员变量
@@ -393,11 +399,12 @@
 //	//打印结构体数据
 //	//Print1 和Print2 哪个更好？
 //	Print1(s);
-//	Print2(&s);
-//
+//	Print2(&s);//好
 //	return 0;
 //}
-//
+
+
+
 //int Add(int x, int y)
 //{
 //	int z = 0;
