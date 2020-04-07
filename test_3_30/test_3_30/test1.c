@@ -1,11 +1,15 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-
 #include <stdio.h>
+
 int main()
 {
-	char a = -1;
-	signed char b = -1;
-	unsigned char c = -1;
-	printf("a=%d,b=%d,c=%d", a, b, c);
+	int n = 9;
+	float *pFloat = (float *)&n;
+	printf("n的值为：%d\n", n);
+	printf("*pFloat的值为：%f\n", *pFloat);
+
+	*pFloat = 9.0;
+	printf("num的值为：%d\n", n);
+	printf("*pFloat的值为：%f\n", *pFloat);
 	return 0;
 }

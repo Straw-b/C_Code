@@ -1,10 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
 
 
-
-
-//
-//
 //int main()
 //{
 //	int a = 10;   //4
@@ -16,7 +13,7 @@
 //	return 0;
 //}
 
-#include <stdio.h>
+
 //
 //void test(void)
 //{
@@ -28,7 +25,8 @@
 //	test(100);
 //	return 0;
 //}
-//
+
+
 //int main()
 //{
 //	int a = 20;//4个字节-32bit
@@ -63,7 +61,7 @@
 //
 //	return 0;
 //}
-//
+
 //int main()
 //{
 //	int a = 0x11223344;
@@ -72,6 +70,7 @@
 //	//
 //	return 0;
 //}
+
 
 //int check_sys()
 //{
@@ -82,6 +81,7 @@
 //	else
 //		return 0;
 //}
+
 
 //int check_sys()
 //{
@@ -97,9 +97,12 @@
 //	int a = 1;
 //	return *(char*)&a;
 //}
+//
 ////指针类型的意义：
 ////1. 指针类型决定了指针解引用操作符能访问几个字节：char*p; *p 访问了1个字节，int*p;*p 访问4个字节
-////2. 指针类型决定了指针+1，-1，加的或者减的是几个字节；char*p; p+1,跳过一个字符，int*p; p+1,跳过一个整形-4个字节
+////2. 指针类型决定了指针+1，-1，加的或者减的是几个字节；
+////char*p; p+1,跳过一个字符，int*p; p+1,跳过一个整形-4个字节
+//
 //
 //int main()
 //{
@@ -118,7 +121,8 @@
 //	return 0;
 //}
 
-//
+
+
 //int main()
 //{
 //	int a = 0x11223344;
@@ -150,8 +154,7 @@
 //	//-1 -1  255
 //	return 0;
 //}
-//
-//
+
 
 
 //#include <stdio.h>
@@ -172,7 +175,8 @@
 //	return 0;
 //}
 
-//
+
+
 //#include <stdio.h>
 //int main()
 //{
@@ -192,7 +196,7 @@
 //}
 
 
-//
+
 //int main()
 //{
 //	int i = -20;
@@ -227,9 +231,9 @@
 //
 //	return 0;
 //}
-//
 
-//
+
+
 //int main()
 //{
 //	char a[1000];
@@ -238,13 +242,12 @@
 //	{
 //		a[i] = -1 - i;
 //	}
-//	printf("%d", strlen(a));
+//	printf("%d\n", strlen(a));
 //
 //	return 0;
 //}
 
 
-#include <stdio.h>
 
 //unsigned char i = 0;//0-255
 //
@@ -257,6 +260,7 @@
 //	return 0;
 //}
 
+
 //int main()
 //{
 //	double d = 1E10;
@@ -264,6 +268,7 @@
 //
 //	return 0;
 //}
+
 
 //int main()
 //{
