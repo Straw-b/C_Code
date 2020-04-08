@@ -1,16 +1,10 @@
-
-
-
-
-
-
 #define ROW 9
 #define COL 9
 
 #define ROWS ROW+2
 #define COLS COL+2
 
-#define EASY_COUNT 10
+#define EASY_COUNT 1
 
 #include <stdio.h>
 #include <stdlib.h>
