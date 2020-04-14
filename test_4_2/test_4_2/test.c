@@ -31,7 +31,7 @@
 //	//1001.0
 //	//1.001*2^3
 //	//(-1)^0 *1.001 * 2^3
-//	//01000001000100000000000000000000
+//	//0 10000010 00100000000000000000000
 //
 //	printf("num的值为：%d\n", n);
 //	printf("*pFloat的值为：%f\n", *pFloat);//9.0
@@ -48,6 +48,7 @@
 //	//S = 0
 //	//M = 1.011 
 //	//E = 2
+//  //0 129 011
 //	//0 10000001 01100000000000000000000
 //	//0x40b00000
 //	//(-1)^0 * 1.011 * 2^2
@@ -64,7 +65,9 @@
 //	//
 //	return 0;
 //}
-//
+
+
+
 
 //void test(int arr[])
 //{
@@ -76,17 +79,17 @@
 //{
 //	int arr[10] = { 0 };
 //	test(arr);
-//
 //	return 0;
 //}
+
 
 //int main()
 //{
 //	char ch = 'w';
 //	char* pc = &ch;
-//
 //	return 0;
 //}
+
 
 //int main()
 //{
@@ -94,10 +97,10 @@
 //	char* pc = arr;
 //	printf("%s\n", arr);
 //	printf("%s\n", pc);
-//
 //	return 0;
 //}
-//
+
+
 //int main()
 //{
 //	const char* p = "abcdef";//"abcdef" 是一个常量字符串
@@ -109,19 +112,18 @@
 //
 //	return 0;
 //}
-
 //
 //www.stackoverflow.com
 //Segmentation fault - 段错误
 //segmentfault.com  
-//
-//
+
+
 //int main()
 //{
 //	char arr1[] = "abcdef";
-//	char arr2[] = "acbdef";
-//	const char* p1 = "abcdef";
-//	const char* p2 = "abcdef";
+//	char arr2[] = "abcdef";
+//	const char* p1 = "abcdef";//常量字符串
+//	const char* p2 = "abcdef";//常量字符串
 //
 //	if (p1 == p2)
 //	{
@@ -140,9 +142,10 @@
 //	//{
 //	//	printf("haha\n");
 //	//}
-//
 //	return 0;
 //}
+
+
 
 //指针数组 是数组，用来存放指针的
 //
@@ -155,6 +158,7 @@
 //
 //	return 0;
 //}
+
 
 //int main()
 //{
@@ -170,7 +174,9 @@
 //	}
 //	return 0;
 //}
-//
+
+
+
 //int main()
 //{
 //	int arr1[] = { 1, 2, 3, 4, 5 };
@@ -188,13 +194,12 @@
 //		}
 //		printf("\n");
 //	}
-//
 //	return 0;
 //}
 
-//
+
+
 //数组指针- 指针
-//
 //
 //int main()
 //{
@@ -212,18 +217,19 @@
 //
 //	return 0;
 //}
-//
-//int main()
-//{
-//	char* arr[5];
-//	char* (*pa)[5] = &arr;//
-//
-//	int arr2[10] = { 0 };
-//	int (*pa2)[10] = &arr2;
-//	return 0;
-//}
 
-//
+
+int main()
+{
+	char* arr[5];
+	char* (*pa)[5] = &arr;
+
+	int arr2[10] = { 0 };
+	int (*pa2)[10] = &arr2;
+	return 0;
+}
+
+
 //int main()
 //{
 //	int arr[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
@@ -250,19 +256,19 @@
 //}
 
 //参数是数组的形式
-void print1(int arr[3][5], int x, int y)
-{
-	int i = 0;
-	int j = 0;
-	for (i = 0; i < x; i++)
-	{
-		for (j = 0; j < y; j++)
-		{
-			printf("%d ", arr[i][j]);
-		}
-		printf("\n");
-	}
-}
+//void print1(int arr[3][5], int x, int y)
+//{
+//	int i = 0;
+//	int j = 0;
+//	for (i = 0; i < x; i++)
+//	{
+//		for (j = 0; j < y; j++)
+//		{
+//			printf("%d ", arr[i][j]);
+//		}
+//		printf("\n");
+//	}
+//}
 
 ////参数是指针的形式
 //void print2(int(*p)[5], int x, int y)
