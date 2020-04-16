@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 
-//
+
 //int main()
 //{
 //	//字符指针
@@ -20,6 +20,8 @@
 //	int(* parr3[10])[5];
 //	return 0;
 //}
+
+
 
 //void test(int arr[3][5])
 //{}
@@ -50,7 +52,9 @@
 //
 //	return 0;
 //}
-//
+
+
+
 //void test1(int* p)
 //{
 //}
@@ -71,7 +75,9 @@
 //	test2(pc);//ok
 //	return 0;
 //}
-//
+
+
+
 //void test(int **p)
 //{}
 //
@@ -86,6 +92,7 @@
 //
 //	return 0;
 //}
+
 
 //数组指针 - 是指向数组的指针
 //函数指针 - 是指向函数的指针 - 存放函数地址的一个指针
@@ -136,7 +143,8 @@
 //	return 0;
 //}
 
-//
+
+
 // signal是一个函数声明
 // signal函数的参数有2个，第一个是int。第二个是函数指针，该函数指针指向的函数的参数是int，返回类型是void
 // signal函数的返回类型也是一个函数指针：该函数指针指向的函数的参数是int，返回类型是void
@@ -149,8 +157,8 @@
 //
 //typedef unsigned int uint;
 
-//
-//
+
+
 //int Add(int x, int y)
 //{
 //	int z = 0;
@@ -173,6 +181,9 @@
 //
 //	return 0;
 //}
+
+
+
 //int Add(int x, int y)
 //{
 //	return x + y;
@@ -208,6 +219,8 @@
 //	return 0;
 //}
 
+
+
 //char* my_strcpy(char* dest, const char* src);
 ////1.写一个函数指针 pf，能够指向my_strcpy
 //char* (*pf)(char*, const char*);
@@ -215,8 +228,9 @@
 ////2. 写一个函数指针数组 pfArr，能够存放4个my_strcpy函数的地址
 //char* (*pfArr[4])(char*, const char*);
 
-//计算器
-//
+
+
+////计算器1
 //void menu()
 //{
 //	printf("**************************\n");
@@ -251,7 +265,6 @@
 //	return x ^ y;
 //}
 //
-//
 //void Calc(int (*pf)(int, int))
 //{
 //	int x = 0;
@@ -264,13 +277,11 @@
 //int main()
 //{
 //	int input = 0;
-//
 //	do
 //	{
 //		menu();
 //		printf("请选择:>");
 //		scanf("%d", &input);
-//
 //		switch (input)
 //		{
 //		case 1:
@@ -296,6 +307,41 @@
 //}
 
 
+
+////计算器2
+//void menu()
+//{
+//	printf("**************************\n");
+//	printf("**  1. add       2. sub **\n");
+//	printf("**  3. mul       4. div **\n");
+//	printf("**  5. xor       0. exit**\n");
+//	printf("**************************\n");
+//}
+//
+//int Add(int x, int y)
+//{
+//	return x + y;
+//}
+//
+//int Sub(int x, int y)
+//{
+//	return x - y;
+//}
+//
+//int Mul(int x, int y)
+//{
+//	return x * y;
+//}
+//
+//int Div(int x, int y)
+//{
+//	return x / y;
+//}
+//
+//int Xor(int x, int y)
+//{
+//	return x ^ y;
+//}
 //
 //int main()
 //{
@@ -327,9 +373,10 @@
 //		}
 //	} while (input);
 //}
-//
-//
-//
+
+
+
+
 //int Add(int x, int y)
 //{
 //	return x + y;
@@ -351,7 +398,8 @@
 //	return 0;
 //}
 
-//
+
+
 //void print(char *str)
 //{
 //	printf("hehe:%s", str);
@@ -365,12 +413,12 @@
 //
 //int main()
 //{
-//
 //	test(print);
-//
 //	return 0;
 //}
-//
+
+
+
 //void BubbleSort(int arr[], int sz)
 //{
 //	//...

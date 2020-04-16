@@ -1,13 +1,19 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-
 #include <stdio.h>
+
+void print(char *str)
+{
+	printf("hehe:%s", str);
+}
+
+void test( void (*p)(char*) )
+{
+	printf("test\n");
+	p("bit");
+}
 
 int main()
 {
-	char ch = 'w';
-	char* p = &ch;
-	const char* p2 = "abcdef";
-	int* arr[10];
-	char* ch[5];
+	test(print);
 	return 0;
 }
