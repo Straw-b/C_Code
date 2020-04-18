@@ -146,6 +146,11 @@
 //	return 0;
 //}
 
+
+
+
+
+
 //1. 计数器的方法
 //2. 递归
 //3. 指针-指针
@@ -218,7 +223,10 @@
 //
 //	return 0;
 //}
-//
+
+
+
+
 //char* my_strcat(char*dest, const char*src)
 //{
 //	char* ret = dest;
@@ -279,6 +287,8 @@
 //
 //	return 0;
 //}
+
+
 
 //int my_strcmp(const char* str1, const char* str2)
 //{
@@ -349,13 +359,13 @@
 //	return 0;
 //}
 
-int main()
-{
-	char arr1[30] = "hello\0xxxxxxxxxxxxx";
-	char arr2[] = "world";
-	//
-	strncat(arr1, arr2, 8);
-	printf("%s\n", arr1);
-
-	return 0;
-}
+//int main()
+//{
+//	char arr1[30] = "hello\0xxxxxxxxxxxxx";
+//	char arr2[] = "world";
+//	//
+//	strncat(arr1, arr2, 8);
+//	printf("%s\n", arr1);
+//
+//	return 0;
+//}
