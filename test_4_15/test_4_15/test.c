@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
 #include <stdio.h>
-//
+
 //int main()
 //{
 //	unsigned char a = 200;
@@ -25,15 +25,17 @@
 //
 //	return 0;
 //}
-//
 
-//int main()
-//{
-//	unsigned int a = 0x1234;
-//	unsigned char b = *(unsigned char *)&a;
-//	printf("%d\n", b);
-//	return 0;
-//}
+
+
+int main()
+{
+	unsigned int a = 0x1234;
+	unsigned char b = *(unsigned char *)&a;
+	printf("%d\n", b);
+	return 0;
+}
+
 
 
 //在32位大端模式处理器上变量b等于（ ）
@@ -55,7 +57,9 @@
 //
 //	return 0;
 //}
-//
+
+
+
 //     1
 //    1 1
 //   1 2 1
@@ -100,12 +104,10 @@
 //}
 
 
-//第7题（编程题）
-//题目名称：
+
 //猜凶手
 //题目内容：
 //日本某地发生了一件谋杀案，警察通过排查确定杀人凶手必为4个嫌疑犯的一个。
-//
 //以下为4个嫌疑犯的供词 :
 //A说：不是我。//0
 //B说：是C。   //0
@@ -146,7 +148,8 @@
 //思维题-智力题
 //
 
-//
+
+
 //int main()
 //{
 //	int a = 0;
@@ -180,7 +183,9 @@
 //	}
 //	return 0;
 //}
-//
+
+
+
 //#include <stdlib.h>
 //
 //
@@ -195,7 +200,9 @@
 //	p = NULL;
 //	return 0;
 //}
-//
+
+
+
 //#include <stdio.h>
 //int main()
 //{
@@ -217,7 +224,8 @@
 //	return 0;
 //}
 
-//
+
+
 //int* fun(int a, int b);//函数声明
 //int(*) fun(int a, int b);//err
 //int(*fun)(int a, int b);//函数指针
@@ -226,17 +234,17 @@
 
 
 
-//A.int(*    (*F)(int, int)    )(int)
-//B.int(*F)(int, int)
-//C.int(*(*F)(int, int))
-//D.*(*F)(int, int)(int)
+//int(*    (*F)(int, int)    )(int)
+//int(*F)(int, int)
+//int(*(*F)(int, int))
+//*(*F)(int, int)(int)
 
 //(int * p[10])(int*)
 //int[10] * p(int *)
 //int(*(*p)[10])(int *)
 //int((int *)[10])*p
 
-//
+
 //int main()
 //{
 //	int a[5] = { 5, 4, 3, 2, 1 };
@@ -257,6 +265,7 @@
 //	return 0;
 //}
 
+
 //题目内容：
 //实现一个函数，可以左旋字符串中的k个字符。
 //例如：
@@ -269,6 +278,8 @@
 //{
 //
 //}
+
+
 
 #include <string.h>
 #include <assert.h>
@@ -301,36 +312,37 @@
 //cdefab
 
 //逆序字符串的函数
-void reverse(char* left, char* right)
-{
-	assert(left != NULL);
-	assert(right != NULL);
-	while (left<right)
-	{
-		char tmp = *left;
-		*left = *right;
-		*right = tmp;
-		left++;
-		right--;
-	}
-}
-
-void left_move(char* arr, int k)
-{
-	assert(arr);
-	int len = strlen(arr);
-	assert(k <= len);
-
-	reverse(arr, arr + k - 1);//逆序左边
-	reverse(arr + k, arr + len - 1);//逆序右边
-	reverse(arr, arr + len - 1);//逆序整体
-}
+//void reverse(char* left, char* right)
+//{
+//	assert(left != NULL);
+//	assert(right != NULL);
+//	while (left<right)
+//	{
+//		char tmp = *left;
+//		*left = *right;
+//		*right = tmp;
+//		left++;
+//		right--;
+//	}
+//}
+//
+//void left_move(char* arr, int k)
+//{
+//	assert(arr);
+//	int len = strlen(arr);
+//	assert(k <= len);
+//
+//	reverse(arr, arr + k - 1);//逆序左边
+//	reverse(arr + k, arr + len - 1);//逆序右边
+//	reverse(arr, arr + len - 1);//逆序整体
+//}
 //abcdef
 //bcdefa
 //cdefab
 //defabc
 //efabcd
 //fabcde
+
 
 //int is_left_move(char* s1, char* s2)
 //{
@@ -349,20 +361,22 @@ void left_move(char* arr, int k)
 
 //abcdefabcdef
 
-int main()
-{
-	char arr1[] = "abcdef";
-	char arr2[] = "cdefab";
-	int ret = is_left_move(arr1, arr2);
-	if (ret == 1)
-		printf("Yes\n");
-	else
-		printf("No\n");
 
-	return 0;
-}
-
+//int main()
+//{
+//	char arr1[] = "abcdef";
+//	char arr2[] = "cdefab";
+//	int ret = is_left_move(arr1, arr2);
+//	if (ret == 1)
+//		printf("Yes\n");
+//	else
+//		printf("No\n");
 //
+//	return 0;
+//}
+
+
+
 //int main()
 //{
 //	char arr[] = "abcdef";
