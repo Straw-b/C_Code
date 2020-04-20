@@ -31,6 +31,8 @@
 //	printf("%d\n", sizeof(*a));//a是首元素地址-第一行的地址，*a就是第一行，sizeof(*a)就是计算第一行的大小
 //	printf("%d\n", sizeof(a[3]));//16
 //
+//
+//
 //	//char* p = "abcdef";
 //	//
 //	//printf("%d\n", strlen(p));//6
@@ -48,6 +50,7 @@
 //	//printf("%d\n", sizeof(&p));//4/8  地址
 //	//printf("%d\n", sizeof(&p + 1));//4/8 地址 
 //	//printf("%d\n", sizeof(&p[0] + 1));//4/8 地址
+//
 //
 //
 //	//char arr[] = {'a', 'b', 'c', 'd', 'e', 'f'};
@@ -73,9 +76,14 @@
 //
 //	return 0;
 //}
-//
-//
-//
+
+
+
+
+
+
+
+
 //int main()
 //{
 //	int a[5] = { 1, 2, 3, 4, 5 };
@@ -85,8 +93,7 @@
 //}
 
 
-//
-//
+
 //struct Test
 //{
 //	int Num;
@@ -110,6 +117,7 @@
 //}
 
 
+
 //int main()
 //{
 //	int a[4] = { 1, 2, 3, 4 };
@@ -118,6 +126,7 @@
 //	printf("%x,%x", ptr1[-1], *ptr2);
 //	return 0;
 //}
+
 
 
 //#include <stdio.h>
@@ -131,6 +140,8 @@
 //
 //	return 0;
 //}
+
+
 
 //int main()
 //{
