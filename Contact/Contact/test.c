@@ -8,7 +8,7 @@ void menu()
 	printf("****** 1. add           2. del    *******\n");
 	printf("****** 3. search        4. modify *******\n");
 	printf("****** 5. show          6. sort   *******\n");
-	printf("****** 0. exit                    *******\n");
+	printf("****** 7. empty         0. exit   *******\n");
 	printf("*****************************************\n");
 }
 
@@ -43,8 +43,10 @@ int main()
 			ShowContact(&con);
 			break;
 		case SORT:
-			//自主实现
 			SortContact(&con);
+			break;
+		case EMPTY:
+			EmptyContact(&con);
 			break;
 		case EXIT:
 			printf("退出通讯录\n");

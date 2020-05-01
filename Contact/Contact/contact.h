@@ -18,7 +18,8 @@ enum Option
 	SEARCH,
 	MODIFY,
 	SHOW,
-	SORT
+	SORT,
+	EMPTY
 };
 
 struct PeoInfo
@@ -41,21 +42,17 @@ struct Contact
 //声明函数
 //初始化通讯录的函数
 void InitContact(struct Contact* ps);
-
 //增加一个信息到通讯录
 void AddContact(struct Contact* ps);
-
 //打印通讯录中的信息
 void ShowContact(const struct Contact* ps);
-
 //删除指定的联系人
 void DelContact(struct Contact* ps);
-
 //查找指定的人的信息
 void SearchContact(const struct Contact* ps);
-
 //修改指定联系人
 void ModifyContact(struct Contact* ps);
-
 //排序通讯录内容
 void SortContact(struct Contact*ps);
+//清空通讯录内容
+void EmptyContact(struct Contact* ps);

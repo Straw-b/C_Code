@@ -19,7 +19,7 @@ void AddContact(struct Contact* ps)
 		printf("请输入名字:>");
 		scanf("%s", ps->data[ps->size].name);
 		printf("请输入年龄:>");
-		scanf("%d", &(ps->data[ps->size].age));
+		scanf("%d", &(ps->data[ps->size].age));//取地址
 		printf("请输入性别:>");
 		scanf("%s", ps->data[ps->size].sex);
 		printf("请输入电话:>");
@@ -36,7 +36,7 @@ void ShowContact(const struct Contact* ps)
 {
 	if (ps->size == 0)
 	{
-		printf("通讯录为空格\n");
+		printf("通讯录为空\n");
 	}
 	else
 	{
@@ -66,7 +66,6 @@ static int FindByName(const struct Contact* ps, char name[MAX_NAME])
 			return i;
 		}
 	}
-
 	return -1;//找不到的情况
 }
 
@@ -148,5 +147,26 @@ void ModifyContact(struct Contact* ps)
 
 void SortContact(struct Contact*ps)
 {
+	int i = 0;
+	int j = 0;
+	struct PeoInfo tmp;
+	for (i = 0; i < ps->size; i++)
+	{
+		for (j = 0; j < ps->size - i - 1; j++)
+		{
+			if (strcmp(ps->data[j].name, ps->data[j + 1].name)>0)
+			{
+				tmp = ps->data[j];
+				ps->data[j] = ps->data[j + 1];
+				ps->data[j + 1] = tmp;
+			}
+		}
+	}
+	printf("排序完成\n");
+}
 
+void EmptyContact(struct Contact* ps)
+{
+	ps->size = 0;
+	printf("清空成功\n");
 }
