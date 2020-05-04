@@ -4,36 +4,38 @@
 #include <stdlib.h>
 
 
-//
 //int main()
 //{
-//	//int *p = (int*)malloc(40);
-//	//if (p == NULL)
-//	//{
-//	//	return 0;
-//	//}
-//	////使用
-//	//int *p2 = realloc(p, 80);
-//	//if (p2 != NULL)
-//	//{
-//	//	p = p2;
-//	//}
-//	//
+//	int *p = (int*)malloc(40);
+//	if (p == NULL)
+//	{
+//		return 0;
+//	}
+//	//使用
+//	int *p2 = realloc(p, 80);
+//	if (p2 != NULL)
+//	{
+//		p = p2;
+//	}
 //
-//	//int *p = realloc(NULL, 40);//malloc(40)
+//	//直接开辟空间
+//	int *p = realloc(NULL, 40);//malloc(40)
 //	return 0;
 //}
 
+
+
 #include <windows.h>
-//
+
 //int main()
 //{
-//	//1. 对NULL指针解引用操作
+//	////1. 对NULL指针解引用操作
 //	//int *p = malloc(40);
 //	////p进行相关的判断
 //	//*p = 10;//malloc开辟空间失败-对NULL指针解引用
 //
-//	//2.对动态开辟内存的越界访问
+//
+//	////2.对动态开辟内存的越界访问
 //	//int *p = (int*)malloc(40);//10个int 0-9
 //	//if (p == NULL)
 //	//{
@@ -45,11 +47,11 @@
 //	//{
 //	//	*(p + i) = i;
 //	//}
-//
 //	//free(p);
 //	//p = NULL;
 //
-//	//3. 对非动态开辟内存使用free释放
+//
+//	////3. 对非动态开辟内存使用free释放
 //	//int a = 10;
 //	//int *p = &a;
 //	////...
@@ -57,7 +59,8 @@
 //	//free(p);
 //	//p = NULL;
 //
-//	//4. 使用free释放动态开辟内存的一部分
+//
+//	////4. 使用free释放动态开辟内存的一部分
 //	//int*p = (int*)malloc(40);
 //	//if (p == NULL)
 //	//{
@@ -69,11 +72,12 @@
 //	//	*p++ = i;
 //	//}
 //	////回收空间
-//	//// 使用free释放动态开辟内存的一部分
+//	////使用free释放动态开辟内存的一部分
 //	//free(p);
 //	//p =NULL;
 //
-//	//5.对同一块动态内存的多次释放
+//
+//	////5.对同一块动态内存的多次释放
 //	//int *p = (int*)malloc(40);
 //	//if (p == NULL)
 //	//{
@@ -83,21 +87,22 @@
 //	////释放
 //	//free(p);
 //	//p = NULL;
-//
 //	//free(p);
 //
-//	//6.动态开辟内存忘记释放（内存泄漏）
+//
+//	////6.动态开辟内存忘记释放（内存泄漏）
 //	//while (1)
 //	//{
 //	//	malloc(1);
 //	//}
 //
-//
 //	return 0;
 //}
-//
 
-//
+
+
+
+
 //void GetMemory(char *p)
 //{
 //	p = (char *)malloc(100);
@@ -115,7 +120,7 @@
 //{
 //	Test();
 //
-//	//char*str = "abcdef";
+//	//char *str = "abcdef";
 //	//printf("%s\n", str);
 //	//printf(str);
 //	//printf("abcdef");
@@ -124,7 +129,7 @@
 //}
 
 
-//改正1
+////改正1
 //void GetMemory(char **p)
 //{
 //	*p = (char *)malloc(100);
@@ -136,7 +141,6 @@
 //	GetMemory(&str);
 //	strcpy(str, "hello world");
 //	printf(str);
-//
 //	free(str);
 //	str = NULL;
 //}
@@ -147,7 +151,8 @@
 //	return 0;
 //}
 
-//改正2
+
+////改正2
 //char* GetMemory(char *p)
 //{
 //	p = (char *)malloc(100);
@@ -169,7 +174,10 @@
 //	Test();
 //	return 0;
 //}
-//
+
+
+
+
 //char *GetMemory(void)
 //{
 //	char p[] = "hello world";
@@ -188,7 +196,8 @@
 //	Test();
 //	return 0;
 //}
-//
+
+
 
 
 //int* test()
@@ -201,9 +210,10 @@
 //int main()
 //{
 //	int*p = test();
-//	*p = 20;//
+//	*p = 20;//err
 //	return 0;
 //}
+
 
 //int* test()
 //{
@@ -214,10 +224,13 @@
 //int main()
 //{
 //	int *p = test();
-//
 //	return 0;
 //}
-//
+
+
+
+
+
 //void GetMemory(char **p, int num)
 //{
 //	*p = (char *)malloc(num);
@@ -238,7 +251,10 @@
 //	return 0;
 //}
 
-//
+
+
+
+
 //void Test(void)
 //{
 //	char *str = (char *)malloc(100);
@@ -256,11 +272,11 @@
 //int main()
 //{
 //	Test();
-//
 //	return 0;
 //}
-//
-//
+
+
+
 
 
 //struct S
@@ -268,7 +284,7 @@
 //	int n;
 //	int arr[10];
 //};
-
+//
 //struct S
 //{
 //	int n;
@@ -284,7 +300,7 @@
 //int main()
 //{
 //	//struct S s;
-//	//printf("%d\n", sizeof(s));//
+//	//printf("%d\n", sizeof(s));
 //	struct S* ps = (struct S*)malloc(sizeof(struct S)+5*sizeof(int));
 //	ps->n = 100;
 //
@@ -293,6 +309,7 @@
 //	{
 //		ps->arr[i] = i;//0 1 2 3 4
 //	}
+//
 //	struct S* ptr = realloc(ps, 44);
 //	if (ptr != NULL)
 //	{
@@ -302,27 +319,29 @@
 //	{
 //		ps->arr[i] = i;
 //	}
-//
 //	for (i = 0; i < 10; i++)
 //	{
 //		printf("%d ", ps->arr[i]);
 //	}
-//
 //	//释放
 //	free(ps);
 //	ps = NULL;
-//
 //	return 0;
 //}
+
+
+
+
 
 struct S
 {
 	int n;
 	int* arr;
 };
+
 int main()
 {
-	struct S*ps = (struct S*)malloc(sizeof(struct S));
+	struct S *ps = (struct S*)malloc(sizeof(struct S));
 	ps->arr = malloc(5 * sizeof(int));
 
 	int i = 0;
