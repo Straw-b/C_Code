@@ -1,5 +1,8 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
+#include <stdio.h>
+#include <stdlib.h>
+
 //struct S
 //{
 //	int n;
@@ -7,10 +10,6 @@
 //	int arr[0];//柔性数组成员
 //};
 
-#include <stdio.h>
-
-#include <stdlib.h>
-//
 //struct S
 //{
 //	int n;//4
@@ -21,7 +20,7 @@
 //{
 //	//printf("%d\n",sizeof(struct S));
 //	int i = 0;
-//	struct S* p = (struct S*)malloc(sizeof(struct S)+10*sizeof(int));
+//	struct S* p = (struct S*)malloc(sizeof(struct S) + 10 * sizeof(int));
 //	p->n = 100;
 //	for(i=0; i<10; i++)
 //	{
@@ -33,14 +32,17 @@
 //	}
 //	free(p);
 //	p = NULL;
-//
 //	return 0;
 //}
-//
+
+
+
+
+
 //struct S
 //{
 //	int n;
-//	int*arr;
+//	int* arr;
 //};
 //
 //int main()
@@ -48,7 +50,7 @@
 //	int i = 0;
 //	struct S* p = (struct S*)malloc(sizeof(struct S));
 //	p->n = 100;
-//	p->arr = (int*)malloc(10*sizeof(int));
+//	p->arr = (int*)malloc(10 * sizeof (int));
 //	for(i=0; i<10; i++)
 //	{
 //		p->arr[i] = i;
@@ -57,17 +59,23 @@
 //	{
 //		printf("%d ", p->arr[i]);
 //	}
-//
 //	free(p->arr);
 //	p->arr = NULL;
-//
 //	free(p);
 //	p = NULL;
 //	return 0;
 //}
 
-//
-//#include <stdio.h>
+
+
+
+
+
+
+//C语言文件操作
+
+#include <stdio.h>
+
 //int main()
 //{
 //	int a = 10000;
@@ -77,7 +85,7 @@
 //	pf = NULL;
 //	return 0;
 //}
-//
+
 
 
 #include <errno.h>
@@ -107,14 +115,16 @@
 //	//关闭文件
 //	fclose(pf);
 //	pf = NULL;
-//
 //	return 0;
 //}
 
 
+
+
+
 //int main()
 //{
-//	FILE* pfWrite = fopen("TEST.txt", "w");
+//	FILE* pfWrite = fopen("test.txt", "w");
 //	if(pfWrite == NULL)
 //	{
 //		printf("%s\n", strerror(errno));
@@ -128,10 +138,13 @@
 //	//关闭文件
 //	fclose(pfWrite);
 //	pfWrite = NULL;
-//
 //	return 0;
 //}
-//
+
+
+
+
+
 //int main()
 //{
 //	FILE* pfRead = fopen("test.txt", "r");
@@ -148,11 +161,12 @@
 //	//关闭文件
 //	fclose(pfRead);
 //	pfRead = NULL;
-//
 //	return 0;
 //}
 
-//
+
+
+
 //从键盘输入
 //输出到屏幕.
 //键盘&屏幕都是外部设备
@@ -164,7 +178,8 @@
 //stdin FILE*
 //stdout FILE*
 //stderr FILE*
-//
+
+
 
 
 int main()
