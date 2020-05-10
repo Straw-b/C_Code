@@ -13,7 +13,6 @@ void InitContact(struct Contact* ps)
 	ps->capacity = DEFAULT_SZ;
 }
 
-
 void CheckCapacity(struct Contact* ps)
 {
 	if (ps->size == ps->capacity)
@@ -39,7 +38,7 @@ void AddContact(struct Contact* ps)
 	//1. 如果满了，就增加空间
 	//2. 如果不满，啥事都不干
 	CheckCapacity(ps);
-	//增加数据
+	//添加数据
 	printf("请输入名字:>");
 	scanf("%s", ps->data[ps->size].name);
 	printf("请输入年龄:>");
@@ -174,11 +173,27 @@ void ModifyContact(struct Contact* ps)
 
 void SortContact(struct Contact*ps)
 {
-
+	int i = 0;
+	int j = 0;
+	struct PeoInfo tmp;
+	for (i = 0; i < ps->size; i++)
+	{
+		for (j = 0; j < ps->size - i - 1; j++)
+		{
+			if (strcmp(ps->data[j].name, ps->data[j + 1].name)>0)
+			{
+				tmp = ps->data[j];
+				ps->data[j] = ps->data[j + 1];
+				ps->data[j + 1] = tmp;
+			}
+		}
+	}
+	printf("排序完成\n");
 }
 
-void DestroyContact(Contact* ps)
+void DestroyContact(struct Contact* ps)
 {
 	free(ps->data);
 	ps->data = NULL;
+	printf("退出通讯录\n");
 }

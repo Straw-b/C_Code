@@ -19,7 +19,7 @@ int main()
 	struct Contact con;//con就是通讯录，里边包含：data指针和size，capacity
 	//初始化通讯录
 	InitContact(&con);
-	//
+	
 	do
 	{
 		menu();
@@ -49,7 +49,6 @@ int main()
 		case EXIT:
 			//销毁通讯录-释放动态开辟的内存
 			DestroyContact(&con);
-			printf("退出通讯录\n");
 			break;
 		default:
 			printf("选择错误\n");

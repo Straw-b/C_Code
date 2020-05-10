@@ -1,10 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
-//#define MAX 1000
-
-#define DEFAULT_SZ 3
-
-
+#define DEFAULT_SZ 3//默认容量
 #define MAX_NAME 20
 #define MAX_SEX 5
 #define MAX_TELE 12
@@ -16,7 +12,7 @@
 
 enum Option
 {
-	EXIT,//0
+	EXIT, //0
 	ADD, //1
 	DEL,
 	SEARCH,
@@ -37,7 +33,7 @@ typedef struct PeoInfo
 //通讯录类型
 typedef struct Contact
 {
-	struct PeoInfo *data;//存放1000个信息
+	struct PeoInfo *data;//动态指针
 	int size;//记录当前已经有的元素个数
 	int capacity;//当前通讯录的最大容量
 }Contact;
@@ -66,4 +62,5 @@ void ModifyContact(struct Contact* ps);
 //排序通讯录内容
 void SortContact(struct Contact*ps);
 
-void DestroyContact(Contact* ps);
+//销毁通讯录内容
+void DestroyContact(struct Contact* ps);
