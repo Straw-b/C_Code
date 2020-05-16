@@ -4,13 +4,16 @@
 #include "add.h"
 #include <stdlib.h>
 
-int main()
-{
-	int *p = (int*)malloc(0);
-
-	return 0;
-}
+//int main()
+//{
+//	int *p = (int*)malloc(0);
 //
+//	return 0;
+//}
+
+
+
+
 //#include<stdio.h>
 //int main()
 //{
@@ -28,8 +31,7 @@ int main()
 
 
 
-//
-//
+
 //#include <stdio.h>
 //union Un
 //{
@@ -64,7 +66,8 @@ int main()
 //}
 
 
-//
+
+
 //#include <stddef.h>
 //
 //struct S
@@ -122,6 +125,8 @@ int main()
 //}
 
 
+
+
 //int main()
 //{
 //#if 1==2
@@ -134,6 +139,9 @@ int main()
 //
 //	return 0;
 //}
+
+
+
 
 //int main()
 //{
@@ -150,6 +158,7 @@ int main()
 //
 //	return 0;
 //}
+
 
 //#define DEBUG
 
@@ -189,7 +198,8 @@ int main()
 //	return 0;
 //}
 
-//
+
+
 //#define SIZEOF(type) sizeof(type)
 //
 //int main()
@@ -239,6 +249,7 @@ int main()
 //}
 
 
+
 //int main()
 //{
 //	int a = 10;
@@ -247,6 +258,7 @@ int main()
 //	int b = ++a;  //2
 //	return 0;
 //}
+
 
 
 //#define MAX(X, Y)     ((X)>(Y)?(X):(Y))
