@@ -1,10 +1,9 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS 1
 
-
 #include <stdio.h>
 
-//extern int Add(int x, int y);
-//
+extern int Add(int x, int y);
+
 //int main()
 //{
 //	int a = 10;
@@ -15,27 +14,31 @@
 //}
 
 
-//int main()
-//{
-//	int a = 10;
-//	int b = 20;
-//
-//	int arr[10] = { 0 };
-//	int i = 0;
-//	for (i = 0; i < 10; i++)
-//	{
-//		arr[i] = i;
-//	}
-//	for (i = 0; i < 10; i++)
-//	{
-//		printf("%d ", arr[i]);
-//	}
-//
-//	int c = Add(a, b);
-//	printf("c = %d\n", c);
-//
-//	return 0;
-//}
+
+int main()
+{
+	int a = 10;
+	int b = 20;
+
+	int arr[10] = { 0 };
+	int i = 0;
+	for (i = 0; i < 10; i++)
+	{
+		arr[i] = i;
+	}
+	for (i = 0; i < 10; i++)
+	{
+		printf("%d ", arr[i]);
+	}
+
+	int c = Add(a, b);
+	printf("c = %d\n", c);
+
+	return 0;
+}
+
+
+
 
 //stdio.h
 //D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include
@@ -45,8 +48,8 @@
 
 //Ô¤¶¨Òå·ûºÅ
 
-#include <stdio.h>
-//
+
+
 //int main()
 //{
 //	//printf("%s\n", __FILE__);
@@ -118,6 +121,7 @@
 //	return 0;
 //}
 
+
 //#define SQUARE(X) (X)*(X)
 //
 //int main()
@@ -150,6 +154,7 @@
 //}
 
 
+
 //void print(int a)
 //{
 //	printf("the value of a is %d\n", a);
@@ -165,6 +170,8 @@
 //
 //	return 0;
 //}
+
+
 
 //#define PRINT(X) printf("the value of " #X " is %d\n", X)
 //
