@@ -2,8 +2,8 @@
 
 #include <stdio.h>
 
-extern int Add(int x, int y);
-
+//extern int Add(int x, int y);
+//
 //int main()
 //{
 //	int a = 10;
@@ -38,7 +38,6 @@ extern int Add(int x, int y);
 //}
 
 
-
 //stdio.h
 //D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include
 // /usr/include
@@ -51,46 +50,48 @@ extern int Add(int x, int y);
 
 //预定义符号
 
-int main()
-{
-	printf("%s\n", __FILE__);
-	printf("%d\n", __LINE__);
-	printf("%s\n", __DATE__);
-	printf("%s\n", __TIME__);
-
-	//写日志文件
-	int i = 0;
-	int arr[10] = { 0 };
-	FILE* pf = fopen("log.txt", "w");
-	for (i = 0; i < 10; i++)
-	{
-		arr[i] = i;
-		fprintf(pf, "file:%s line:%d date:%s time:%s i=%d\n", 
-			__FILE__, __LINE__, __DATE__, __TIME__, i);
-		printf("%s\n", __FUNCTION__);
-	}
-	fclose(pf);
-	pf = NULL;
-	for (i = 0; i < 10; i++)
-	{
-		printf("%d ", arr[i]);
-	}
-	return 0;
-}
-
-
+//int main()
+//{
+//	printf("%s\n", __FILE__);
+//	printf("%d\n", __LINE__);
+//	printf("%s\n", __DATE__);
+//	printf("%s\n", __TIME__);
+//
+//	//写日志文件
+//	int i = 0;
+//	int arr[10] = { 0 };
+//	FILE* pf = fopen("log.txt", "w");
+//	for (i = 0; i < 10; i++)
+//	{
+//		arr[i] = i;
+//		fprintf(pf, "file:%s line:%d date:%s time:%s i=%d\n", 
+//			__FILE__, __LINE__, __DATE__, __TIME__, i);
+//		printf("%s\n", __FUNCTION__);
+//	}
+//	fclose(pf);
+//	pf = NULL;
+//	for (i = 0; i < 10; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	return 0;
+//}
 
 
 //int  main()
 //{
-//	printf("%d\n", __STDC__);
+//	printf("%d\n", __STDC__);//err
 //
 //	return 0;
 //}
 
 
-//95% - VS
-//99% - gcc
+//95% - VS - C语言标准
+//99% - gcc - C语言标准
+
+
+
+
 
 //#define MAX 100
 //#define STR "hehe"
@@ -105,14 +106,17 @@ int main()
 //
 //	return 0;
 //
-//	//reg int a;
-//	//register int a;
-//	//int max = MAX;
-//	//int max = 100;
-//	//printf("%d\n", max);
-//	//printf("%s\n", STR);
-//}
+//	reg int a;
+//	register int a;
 //
+//	int max = MAX;
+//	int max = 100;
+//	printf("%d\n", max);
+//	printf("%s\n", STR);
+//}
+
+
+
 //#define MAX 100
 //
 //int main()
@@ -122,6 +126,7 @@ int main()
 //
 //	return 0;
 //}
+
 
 
 //#define SQUARE(X) (X)*(X)
@@ -135,12 +140,13 @@ int main()
 //	int ret = SQUARE(5 + 1);
 //
 //	printf("%d\n", ret);
-//
 //	return 0;
 //}
 
 
-//#define MAX 100
+
+
+//#define MAX 5
 //#define DOUBLE(X) ((X)+(X))
 //
 //int main()
@@ -149,11 +155,11 @@ int main()
 //	int ret = 10 * DOUBLE(MAX);
 //	printf("MAX = %d\n", MAX);
 //	//int ret = 10* ((a)+(a));
-//	//
+//	
 //	printf("%d\n", ret);
-//
 //	return 0;
 //}
+
 
 
 
@@ -172,6 +178,7 @@ int main()
 //
 //	return 0;
 //}
+
 
 
 
@@ -194,12 +201,13 @@ int main()
 
 
 
+
 //#define CAT(X, Y) X##Y
 //
 //int main()
 //{
 //	int Class84 = 2019;
-//	//printf("%d\n", class84);
+//	printf("%d\n", Class84);
 //	printf("%d\n", CAT(Class, 84));
 //	//printf("%d\n", Class##84);
 //	//printf("%d\n", Class84);
