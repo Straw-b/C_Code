@@ -264,7 +264,6 @@
 
 
 
-//#include <stdio.h>
 //union Un
 //{
 //	short s[7];
@@ -278,7 +277,6 @@
 
 
 
-//#include<stdio.h>
 //int main()
 //{
 //	union
@@ -298,6 +296,6 @@
 //int main()
 //{
 //	int *p = (int*)malloc(0);
-//
 //	return 0;
 //}
+
