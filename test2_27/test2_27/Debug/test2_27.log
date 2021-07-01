@@ -1,0 +1,11 @@
+﻿生成启动时间为 2021/7/1 星期四 22:32:18。
+     1>项目“E:\Code\test2_27\test2_27\test2_27.vcxproj”在节点 2 上(Build 个目标)。
+     1>Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Code\test2_27\Debug\test2_27.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Code\test2_27\Debug\test2_27.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Code\test2_27\Debug\test2_27.lib" /MACHINE:X86 Debug\test.obj
+         Debug\test1.obj
+         test2_27.vcxproj -> E:\Code\test2_27\Debug\test2_27.exe
+     1>已完成生成项目“E:\Code\test2_27\test2_27\test2_27.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.79
