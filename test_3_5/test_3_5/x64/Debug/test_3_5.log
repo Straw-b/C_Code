@@ -1,0 +1,11 @@
+﻿  test.cpp
+e:\code\2-3月\test_3_5\test_3_5\test.cpp(286): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“std::size_t”
+  e:\code\2-3月\test_3_5\test_3_5\test.cpp(286): note: 请考虑在格式字符串中使用“%zd”
+e:\code\2-3月\test_3_5\test_3_5\test.cpp(287): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“std::size_t”
+  e:\code\2-3月\test_3_5\test_3_5\test.cpp(287): note: 请考虑在格式字符串中使用“%zd”
+e:\code\2-3月\test_3_5\test_3_5\test.cpp(288): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“std::size_t”
+  e:\code\2-3月\test_3_5\test_3_5\test.cpp(288): note: 请考虑在格式字符串中使用“%zd”
+e:\code\2-3月\test_3_5\test_3_5\test.cpp(289): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“std::size_t”
+  e:\code\2-3月\test_3_5\test_3_5\test.cpp(289): note: 请考虑在格式字符串中使用“%zd”
+  test_3_5.vcxproj -> E:\Code\2-3月\test_3_5\x64\Debug\test_3_5.exe
+  test_3_5.vcxproj -> E:\Code\2-3月\test_3_5\x64\Debug\test_3_5.pdb (Full PDB)
