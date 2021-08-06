@@ -1,0 +1,20 @@
+﻿生成启动时间为 2021/8/6 星期五 10:04:20。
+     1>项目“E:\Code\2-3月\test_3_29\test_3_29\test_3_29.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Release\\" /Fd"Release\vc140.pdb" /Gd /TC /analyze- /errorReport:prompt test.c test1.c test2.c
+         test.c
+         test1.c
+         test2.c
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Code\2-3月\test_3_29\Release\test_3_29.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"E:\Code\2-3月\test_3_29\Release\test_3_29.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Code\2-3月\test_3_29\Release\test_3_29.lib" /MACHINE:X86 /SAFESEH Release\test.obj
+         Release\test1.obj
+         Release\test2.obj
+         正在生成代码
+         All 4 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+         已完成代码的生成
+         test_3_29.vcxproj -> E:\Code\2-3月\test_3_29\Release\test_3_29.exe
+     1>已完成生成项目“E:\Code\2-3月\test_3_29\test_3_29\test_3_29.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:01.25
