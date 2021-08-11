@@ -1,0 +1,10 @@
+file:e:\code\4-5月\test_5_11\test_5_11\test.c line:64 date:Aug 11 2021 time:16:15:20 i=0
+file:e:\code\4-5月\test_5_11\test_5_11\test.c line:64 date:Aug 11 2021 time:16:15:20 i=1
+file:e:\code\4-5月\test_5_11\test_5_11\test.c line:64 date:Aug 11 2021 time:16:15:20 i=2
+file:e:\code\4-5月\test_5_11\test_5_11\test.c line:64 date:Aug 11 2021 time:16:15:20 i=3
+file:e:\code\4-5月\test_5_11\test_5_11\test.c line:64 date:Aug 11 2021 time:16:15:20 i=4
+file:e:\code\4-5月\test_5_11\test_5_11\test.c line:64 date:Aug 11 2021 time:16:15:20 i=5
+file:e:\code\4-5月\test_5_11\test_5_11\test.c line:64 date:Aug 11 2021 time:16:15:20 i=6
+file:e:\code\4-5月\test_5_11\test_5_11\test.c line:64 date:Aug 11 2021 time:16:15:20 i=7
+file:e:\code\4-5月\test_5_11\test_5_11\test.c line:64 date:Aug 11 2021 time:16:15:20 i=8
+file:e:\code\4-5月\test_5_11\test_5_11\test.c line:64 date:Aug 11 2021 time:16:15:20 i=9
